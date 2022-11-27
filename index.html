@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>4.2 Code Exercise 07: Final Project</title>
+</head>
+
+<!-- Makram Ibrahim
+     4.2 Code Exercise 07: Final Project 
+     Aug 28, 2022 -->
+
+<body>
+    <!-- Problem #1-->
+    <h1>Body Mass Calculator</h1>
+    <h3>I will calculate your BMI</h3>
+    <p>This is a measure of body fat based on the height and weight of the person.</p>
+
+    <form id="BMI">
+        <!-- 2 inputs for height, one for the feet and one for the inches. -->
+        <!-- Make sure they both can not be left blank. -->
+        <!-- The feet input should be a whole number between 0 and 8.  -->
+        <!-- The inches input should be between 0 and 11. Decimal values should be accepted.  -->
+        <input type="number" name="feet" id="feet" required min="0" max="8" step="any"><label for="feet"> feet</label>
+        <input type="number" name="inches" id="inches" required min="0" max="11" step="any"><label for="inches">
+            Inches</label>
+
+        <br><br>
+
+        <!-- Input for the weight of the user in lbs. -->
+        <!-- Make sure it can not be left blank. -->
+        <!-- The value could contain decimals and should be between 0 and 1,400. -->
+        <input type="number" name="weight" id="weight" required min="0" max="1400"> <label for="weight">lbs</label>
+
+        <br><br>
+            
+        <!-- A button that starts the process. -->
+        <input type="button" name="calculate" id="bmi-btn" value="CALCULATE">
+
+        <br><br>
+
+        <!-- An empty H1 tag that will hold the final results: -->
+        <h1 id="result"></h1>
+
+        <br><br>
+
+        <!-- An Image that will change based on the Weight Range -->
+        <img id="img-result" src="#" alt="">
+    </form>
+
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>

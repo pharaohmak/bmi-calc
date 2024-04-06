@@ -20,17 +20,17 @@
 
     <form id="BMI">
         <!-- 2 inputs for height, one for the feet and one for the inches. -->
-        <!-- Make sure they both can not be left blank. -->
+        <!-- Both can NOT be left blank. -->
         <!-- The feet input should be a whole number between 0 and 8.  -->
-        <!-- The inches input should be between 0 and 11. Decimal values should be accepted.  -->
-        <input type="number" name="feet" id="feet" required min="0" max="8" step="any"><label for="feet"> feet</label>
-        <input type="number" name="inches" id="inches" required min="0" max="11" step="any"><label for="inches">
+        <!-- The inches input should be between 0 and 11. Decimal values are be accepted.  -->
+        <input type="number" name="feet" id="feet" class="height" required min="0" max="8" step="any"><label for="feet"> feet</label>
+        <input type="number" name="inches" id="inches" class="height" required min="0" max="11" step="any"><label for="inches">
             Inches</label>
 
         <br><br>
 
         <!-- Input for the weight of the user in lbs. -->
-        <!-- Make sure it can not be left blank. -->
+        <!-- Can NOT be left blank. -->
         <!-- The value could contain decimals and should be between 0 and 1,400. -->
         <input type="number" name="weight" id="weight" required min="0" max="1400"> <label for="weight">lbs</label>
 
@@ -47,8 +47,10 @@
         <br><br>
 
         <!-- An Image that will change based on the Weight Range -->
+        <!-- Need to find image results to add -->
         <img id="img-result" src="#" alt="">
     </form>
+    
 
 
     <script src="./JS/script.js"></script>

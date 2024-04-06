@@ -1,8 +1,3 @@
-/** Makram Ibrahim
- * 4.2 Code Exercise 07: Final Project
- * Aug 28, 2022
- */
-
 // [weight (lb) / height (in) / height (in)] x 703
 
 document.querySelector("#bmi-btn").addEventListener("click", function (e) {

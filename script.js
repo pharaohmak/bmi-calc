@@ -23,7 +23,7 @@ document.querySelector("#bmi-btn").addEventListener("click", function (e) {
 
             // Show image result
             document.querySelector("#img-result").alt = "Under Weight Range";
-            document.querySelector("#img-result").src = "IMG/underWeight.jpg";
+            document.querySelector("#img-result").src = "./assets/under-weight.png";
             document.querySelector("#img-result").style.display = "block";
 
             // Show #finalResultsContainer for output (display: block)
@@ -35,37 +35,37 @@ document.querySelector("#bmi-btn").addEventListener("click", function (e) {
 
             // Show image result
             document.querySelector("#img-result").alt = "Normal or Healthy Weight Range";
-            document.querySelector("#img-result").src = "IMG/healthyWeight.jpg";
-            document.querySelector("#img-result").style.display = "block";
+            document.querySelector("#img-result").src = "./assets/healthy-weight.png";
+            document.querySelector("#img-result").style.display = "flex";
 
         }
         else if (BMI >= 25.0 && BMI <= 29.9) {
             // Show text result
-            document.querySelector("#finalTextResult").innerHTML = `Your BMI is ${BMI}, indicating your weight is in the Over Weight Range.`;
+            document.querySelector("#result").innerHTML = `Your BMI is ${BMI}, indicating your weight is in the Over Weight Range.`;
 
             // Show image result
             document.querySelector("#img-result").alt = "Over Weight Range";
-            document.querySelector("#img-result").src = "IMG/overWeight.jpg";
+            document.querySelector("#img-result").src = "./assets/over-weight.png";
             document.querySelector("#img-result").style.display = "block";
 
         }
         else if (BMI >= 30.0 && BMI <= 34.9) {
             // Show text result
-            document.querySelector("#finalTextResult").innerHTML = `Your BMI is ${BMI}, indicating your weight is in the Obese Range.`;
+            document.querySelector("#result").innerHTML = `Your BMI is ${BMI}, indicating your weight is in the Obese Range.`;
 
             // Show image result
             document.querySelector("#img-result").alt = "Obese Range";
-            document.querySelector("#img-result").src = "IMG/obeseWeight.jpg";
+            document.querySelector("#img-result").src = "./assets/obese-weight.png";
             document.querySelector("#img-result").style.display = "block";
 
         }
         else if (BMI >= 35) {
             // Show text result
-            document.querySelector("#finalTextResult").innerHTML = `Your BMI is ${BMI}, indicating your weight is in the Extreme Obese Range.`;
+            document.querySelector("#result").innerHTML = `Your BMI is ${BMI}, indicating your weight is in the Extreme Obese Range.`;
 
             // Show image result
             document.querySelector("#img-result").alt = "Extreme Obese Range";
-            document.querySelector("#img-result").src = "IMG/extremeObeseWeight.jpg";
+            document.querySelector("#img-result").src = "./assets/extremly-obese.png";
             document.querySelector("#img-result").style.display = "block";
 
         }

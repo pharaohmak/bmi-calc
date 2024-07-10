@@ -1,55 +1,48 @@
 # BMI Calculator
 
-## Description
+This BMI (Body Mass Index) calculator calculates and categorizes BMI based on user-provided height (feet and inches) and weight in pounds. It displays the BMI value along with a corresponding category and image representation.
 
-This is a simple BMI (Body Mass Index) calculator that takes user input for height and weight and calculates the corresponding BMI value. The project is built using HTML, CSS, and JavaScript.
+## Features
 
-## Table of Contents
-
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
-
-## Installation
-
-To install the project, follow these steps:
-
-1. Clone the repository to your local machine.
-2. Open the `index.html` file in your web browser.
+- **Interactive Input:** Collects user data through form inputs for height (feet and inches) and weight.
+- **BMI Calculation:** Calculates BMI using the formula: \[ BMI = \left( \frac{{\text{{weight (lb)}}}}{{\text{{height (in)}}^2}} \right) \times 703 \]
+- **BMI Categories:** Categorizes BMI into Underweight, Normal Weight, Overweight, Obese, and Extreme Obese ranges.
+- **Visual Feedback:** Displays corresponding images for each BMI category.
+- **Validation:** Validates user inputs for accurate calculations and displays error messages for invalid entries.
 
 ## Usage
 
-To use the BMI calculator, follow these steps:
+1. **Open the Application:**
+   - Open `index.html` in a web browser.
 
-1. Enter your height in meters in the "Height" input field.
-2. Enter your weight in kilograms in the "Weight" input field.
-3. Click the "Calculate BMI" button.
-4. The calculated BMI value will be displayed on the screen.
+2. **Input Instructions:**
+   - Enter your height in feet and inches.
+   - Enter your weight in pounds.
+
+3. **Calculating BMI:**
+   - Click on the "Calculate BMI" button.
+
+4. **View Results:**
+   - BMI category and corresponding image will be displayed based on the calculated BMI.
+   - Error messages will be shown for invalid or incomplete inputs.
+
+5. **Example Output:**
+   - Example of BMI calculation and category display:
+
+    Your BMI is 23.5, indicating your weight is in the Normal or Healthy Weight Range.
+
+    ![Healthy Weight Range](./assets/healthy-weight.png)
+
+6. **Closing Remarks:**
+- Ensure accurate inputs to receive correct BMI categorization and visual representation.
+
+## Files Included
+
+- `index.html`: HTML file containing the BMI calculator form and JavaScript integration.
+- `style.css`: CSS file for basic styling of the BMI calculator.
+- `script.js`: JavaScript file containing BMI calculation logic and event listeners.
+- `assets/`: Directory containing images for BMI categories.
 
 ## License
 
-This project is licensed under the MIT License.
-
-## Contributing
-
-To contribute to this project, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your changes.
-3. Make your changes and commit them.
-4. Push your changes to your forked repository.
-5. Create a pull request.
-
-## Tests
-
-To run tests for this project, follow these steps:
-
-1. Open the `tests.html` file in your web browser.
-2. The tests will run automatically and display the results on the screen.
-
-## Questions
-
-If you have any questions about this project, please contact me at [your-email@example.com](mailto:your-email@example.com). You can also find me on GitHub at [your-github-username](https://github.com/your-github-username).
+This project is licensed under the MIT License - see the LICENSE file for details.

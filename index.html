@@ -1,59 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
-
     <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <!-- Header Section -->
-    <h1>Body Mass Index Calculator</h1>
-    <h3>I will calculate your BMI</h3>
-    <p>This is a measure of body fat based on the height and weight of the person.</p>
-
-    <form id="BMI">
-        <!-- 2 inputs for height, one for the feet and one for the inches. -->
-        <!-- Both can NOT be left blank. -->
-        <!-- The feet input should be a whole number between 0 and 8.  -->
-        <!-- The inches input should be between 0 and 11. Decimal values are be accepted.  -->
-        <input type="number" name="feet" id="feet" class="height" required min="0" max="8" step="any"><label for="feet"> feet</label>
-        <input type="number" name="inches" id="inches" class="height" required min="0" max="11" step="any"><label for="inches">
-            Inches</label>
-
-        <br><br>
-
-        <!-- Input for the weight of the user in lbs. -->
-        <!-- Can NOT be left blank. -->
-        <!-- The value could contain decimals and should be between 0 and 1,400. -->
-        <input type="number" name="weight" id="weight" required min="0" max="1400"> <label for="weight">lbs</label>
-
-        <br><br>
-            
-        <!-- A button that starts the process. -->
-        <input type="button" name="calculate" id="bmi-btn" value="CALCULATE">
-
-        <br><br>
-
-        <!-- An empty H1 tag that will hold the final results: -->
-        <h1 id="result"></h1>
-
-        <br><br>
-
-        <!-- An Image that will change based on the Weight Range -->
-        <!-- Need to find image results to add -->
-        <img id="img-result" src="./assets/bmi-chart.jpeg" alt="">
-    </form>
-    
-
-
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form id="bmi-form">
+            <div class="height" style="display: flex;">
+                <label for="feet">Height:</label>
+                <input type="number" id="feet" placeholder="Feet" required> 
+                <input type="number" id="inches" placeholder="Inches" required> <br><br>
+                
+            </div>
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" placeholder="Weight in pounds" required> lbs<br><br>
+            <button type="button" id="bmi-btn">Calculate BMI</button>
+        </form>
+        <div id="result-container">
+            <p id="result"></p>
+            <img id="img-result" style="display:none;" alt="BMI Result">
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
-
 </html>
